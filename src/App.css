@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Custom Styles */
+
+@theme {
+  --font-Poppins: "Poppins", sans-serif;
+}
+* {
+  transition: all 250ms ease-in-out;
+}
+body {
+  scroll-behavior: smooth;
+  @apply font-Poppins bg-gray-900 text-white;
+  overflow: hidden;
+}
