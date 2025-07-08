@@ -1,13 +1,10 @@
-import './App.css'
-import { useState , useEffect } from 'react';
-import { motion , AnimatePresence} from 'framer-motion';
+import './App.css';
+import { motion, AnimatePresence } from 'framer-motion';
 
-import { Header } from './helper/components.js';
-import { pageVariants } from "./helper/animation";
+import { Header } from './components';
+import { pageVariants } from './constants';
 
 function App() {
-
-
   return (
     <>
       <AnimatePresence>
@@ -26,4 +23,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
