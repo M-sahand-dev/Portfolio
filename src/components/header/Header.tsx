@@ -1,17 +1,19 @@
 import type { JSX } from 'react';
 import { useState } from 'react';
 // import {navItems} from "../../constants/data"
-import { Link  } from 'react-router-dom';
-import {Navigation_Mobile_Menu_Btn} from "./index"
+import { Link } from 'react-router-dom';
+import { NavigationMobileMenuBtn } from './NavigationMobileMenuBtn';
+import { navItems } from '../../constants';
+import type { NavItem } from '../../types';
 
 export const Header = (): JSX.Element => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-      setIsMobileMenuOpen(prev => {
-          document.body.style.overflow = !prev ? 'hidden' : '';
-          return !prev;
-      });
+    setIsMobileMenuOpen((prev) => {
+      document.body.style.overflow = !prev ? 'hidden' : '';
+      return !prev;
+    });
   };
   return (
     <header className="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
@@ -25,18 +27,17 @@ export const Header = (): JSX.Element => {
           </Link>
 
           <nav className="hidden lg:flex space-x-6 *:px-3 *:py-2 *:text-sm *:font-medium *:text-gray-300 *:hover:text-white *:transition-colors *:cursor-pointer">
-            <Link to={"/"} id='home'>Home</Link>
-            <Link to={"/about"} id='about'>About</Link>
-            <Link to={"/services"} id='services'>Services</Link>
-            <Link to={"/portfolio"} id='portfolio'>Portfolio</Link>
-            <Link to={"/testimonials"} id='testimonials'>Testimonials</Link>
-            <Link to={"/blog"} id='blog'>Blog</Link>
-            <Link to={"/contact"} id='contact'>Contact</Link>
+            {navItems.map((data: NavItem, index: number) => (
+              <Link to={data.link} id={data.id} key={index}>
+                {data.label}
+              </Link>
+            ))}
           </nav>
 
-          <Navigation_Mobile_Menu_Btn                         
-          isOpen={isMobileMenuOpen }
-          onClick={toggleMobileMenu}/>
+          <NavigationMobileMenuBtn
+            isOpen={isMobileMenuOpen}
+            onClick={toggleMobileMenu}
+          />
         </div>
       </div>
       {/* <Outlet/> */}
