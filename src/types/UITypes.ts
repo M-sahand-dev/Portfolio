@@ -8,3 +8,14 @@ export interface NavItem {
   label: string;
   link: string;
 }
+export interface NavMobileProps {
+  isOpen: boolean;
+  onClose: () => void;
+  navItems: NavItem[];
+}
+export interface DescriptionProps {
+    name : string;
+    family : string;
+    skils : string;
+    info : string;
+}

@@ -12,7 +12,7 @@ export const NavigationMobileMenuBtn = ({
     <button
       id="mobile-menu-button"
       onClick={onClick}
-      className="md:hidden text-white focus:outline-none"
+      className="lg:hidden text-white focus:outline-none"
       aria-label={isOpen ? 'Close menu' : 'Open menu'}
     >
       <motion.div
