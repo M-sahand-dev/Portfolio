@@ -69,3 +69,12 @@ export interface PortfolioData {
   description:string;
   Image:string;
 }
+
+export interface BlogPostProps {
+  id: number;
+  image: string;
+  lengthComments: number;
+  date: string;
+  title: string;
+  content: string;
+}

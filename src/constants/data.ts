@@ -5,14 +5,15 @@ import type {
   EducationProps,
   ExperienceProps,
   PortfolioData,
+  BlogPost
 } from '../types';
+
 import test from "../assets/pikaso-composition.jpg";
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', link: '/' },
   { id: 'about', label: 'About', link: '/about' },
   { id: 'portfolio', label: 'Portfolio', link: '/portfolio' },
-  { id: 'testimonials', label: 'Testimonials', link: '/testimonials' },
   { id: 'blog', label: 'Blog', link: '/blog' },
   { id: 'contact', label: 'Contact', link: '/contact' },
 ];
@@ -146,5 +147,37 @@ export const portForioData:PortfolioData[] = [
     category: "Branding",
     description: "Branding",
     Image: test,
+  },
+];
+
+export const blogPost: BlogPost[] = [
+  {
+    id: 1,
+    image: 'https://www.sunucuteknik.com/wp-content/uploads/2022/02/java.jpg',
+    lengthComments: 5,
+    date: 'June 15, 2023',
+    title: "How to Improve Your Website's User Experience",
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 2,
+    lengthComments: 8,
+    image:
+      'https://miro.medium.com/v2/resize:fit:2000/1*8bPiDNL1K1ZdK9O_T5IVKw.png',
+    date: 'May 15, 2023',
+    title: "How to Improve Your Website's User Experience",
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 3,
+    lengthComments: 10,
+    date: 'October 28, 2024',
+    image:
+      'https://stepmediasoftware.com/wp-content/uploads/2025/02/what-is-golang-used-for-1200x640.webp',
+    title: "How to Improve Your Website's User Experience",
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
   },
 ];
