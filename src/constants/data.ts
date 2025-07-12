@@ -5,7 +5,8 @@ import type {
   EducationProps,
   ExperienceProps,
   PortfolioData,
-  BlogPost
+  BlogPostProps,
+  Testimonial
 } from '../types';
 
 import test from "../assets/pikaso-composition.jpg";
@@ -150,7 +151,7 @@ export const portForioData:PortfolioData[] = [
   },
 ];
 
-export const blogPost: BlogPost[] = [
+export const blogPost: BlogPostProps[] = [
   {
     id: 1,
     image: 'https://www.sunucuteknik.com/wp-content/uploads/2022/02/java.jpg',
@@ -179,5 +180,31 @@ export const blogPost: BlogPost[] = [
     title: "How to Improve Your Website's User Experience",
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+];
+
+
+// Static list of testimonial data
+export const testimonials :Testimonial[]= [
+  {
+    image: "https://www.course-api.com/images/people/person-1.jpeg",
+    name: "Susan Smith",
+    revioe:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
+    education: "CEO, Tech Solutions Inc.",
+  },
+  {
+    image: "https://www.course-api.com/images/people/person-2.jpeg",
+    name: "Anna Johnson",
+    revioe:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
+    education: "Marketing Director, Brandify Co.",
+  },
+  {
+    image: "https://www.course-api.com/images/people/person-4.jpeg",
+    name: "Peter Jones",
+    revioe:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
+    education: "Lead Developer, CodeCraft LLC",
   },
 ];

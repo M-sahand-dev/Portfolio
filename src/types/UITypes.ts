@@ -78,3 +78,10 @@ export interface BlogPostProps {
   title: string;
   content: string;
 }
+
+export interface Testimonial {
+  image: string;
+  name: string;
+  revioe: string;
+  education: string;
+}
