@@ -62,6 +62,10 @@ export interface InformationSectionProps {
   age: number;
   from: string;
 }
-// export interface Info {
-  
-// }
+export interface PortfolioData {
+  id:number;
+  title:string;
+  category:string;
+  description:string;
+  Image:string;
+}

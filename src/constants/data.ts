@@ -4,12 +4,13 @@ import type {
   SkillsProps,
   EducationProps,
   ExperienceProps,
+  PortfolioData,
 } from '../types';
+import test from "../assets/pikaso-composition.jpg";
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', link: '/' },
   { id: 'about', label: 'About', link: '/about' },
-  { id: 'services', label: 'Services', link: '/services' },
   { id: 'portfolio', label: 'Portfolio', link: '/portfolio' },
   { id: 'testimonials', label: 'Testimonials', link: '/testimonials' },
   { id: 'blog', label: 'Blog', link: '/blog' },
@@ -61,3 +62,89 @@ export const education: EducationProps[]= [
     university: "Harvard University",
   },
 ]
+export const portForioData:PortfolioData[] = [
+  {
+    id: 1,
+    title: "Creative Design",
+    category: "Design",
+    description: "UI/UX Design",
+    Image: test,
+  },
+  {
+    id: 2,
+    title: "Creative Design",
+    category: "Design",
+    description: "UI/UX Design",
+    Image: test,
+  },
+  {
+    id: 3,
+    title: "Creative Design",
+    category: "Design",
+    description: "UI/UX Design",
+    Image: test,
+  },
+  {
+    id: 4,
+    title: "Mobile App Design",
+    category: "Design",
+    description: "UI/UX Design",
+    Image: test,
+  },
+  {
+    id: 5,
+    title: "Web Application",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 6,
+    title: "E-commerce Website",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 7,
+    title: "E-commerce Website",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 8,
+    title: "E-commerce Website",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 9,
+    title: "E-commerce Website",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 10,
+    title: "E-commerce Website",
+    category: "Development",
+    description: "Web Development",
+    Image: test,
+  },
+  {
+    id: 11,
+    title: "Brand Identity",
+    category: "Branding",
+    description: "Branding",
+    Image: test,
+  },
+  {
+    id: 12,
+    title: "Corporate Branding",
+    category: "Branding",
+    description: "Branding",
+    Image: test,
+  },
+];

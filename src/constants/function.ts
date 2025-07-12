@@ -22,3 +22,4 @@ const calculateAge = (birthDate : string) => {
   // Static birthdate used to calculate age
   const birthDate = '2007-10-28';
   export const age = calculateAge(birthDate)
+

@@ -40,6 +40,7 @@ export const textVariants: Variants = {
       }
   }
 }
+
 export const buttonVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -72,6 +73,7 @@ export const imageVariants: Variants = {
       }
   }
 }
+
 export const borderVariants: Variants = {
   hidden: { opacity: 0, x: -30, y: -30 },
   visible: {

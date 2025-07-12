@@ -7,7 +7,8 @@ import {education , experience} from '../../constants'
 
 export const About = ():JSX.Element => {
   return (
-    <div  id="about" className="py-20 bg-gray-800">
+    <div className="">
+          <div  id="about" className="py-20 bg-gray-800">
       <div  className="container mx-auto px-6">
         {/* Section Title */}
         <Title/>
@@ -50,6 +51,7 @@ export const About = ():JSX.Element => {
             <LanguageSkils/>
         </div>
       </div>
+    </div>
     </div>
   )
 }
