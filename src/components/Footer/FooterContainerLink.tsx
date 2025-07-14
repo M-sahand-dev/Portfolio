@@ -1,4 +1,4 @@
-import React from 'react'
+import type {JSX} from 'react'
 
 /**
  * Footer_Container_Link - Container component for footer navigation links
@@ -11,7 +11,7 @@ import React from 'react'
  * - Flexible container for any number of links
  * - Responsive by default (works with parent flex configurations)
  */
-const Footer_Container_Link = ({ children }) => {
+export const FooterContainerLink = ({ children }:{children:React.ReactNode}):JSX.Element => {
     return (
         /*
          * Unordered list with:
@@ -24,5 +24,3 @@ const Footer_Container_Link = ({ children }) => {
         </ul>
     )
 }
-
-export default Footer_Container_Link

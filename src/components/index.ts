@@ -3,3 +3,4 @@ export * from './HeroSection'
 export * from './About';
 export * from './Portfolio';
 export * from './Contact'
+export * from "./Footer"
