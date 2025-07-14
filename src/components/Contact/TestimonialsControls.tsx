@@ -1,5 +1,4 @@
 import type { JSX } from 'react';
-import type { IconType } from 'react-icons';
 
 export const TestimonialsControls = ({ direction, icon, testimonial, aria } : 
     {direction:string , icon : JSX.Element , testimonial : string ,aria:string }):JSX.Element =>{
