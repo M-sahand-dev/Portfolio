@@ -1,15 +1,11 @@
-import type {JSX} from 'react'
-import { motion } from 'framer-motion'
-import { skills } from '../../constants'
+import type { JSX } from 'react';
+import { motion } from 'framer-motion';
+import { skills } from '../../constants';
 
-// interface SkilsItemProps {
-//   skills: SkillsProps[];
-// }
-
-export const SkilsItem = ():JSX.Element => {
+export const SkilsItem = (): JSX.Element => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {skills.map((item , index) => (
+      {skills.map((item, index) => (
         <div key={index}>
           {/* Skill name and percentage */}
           <div className="flex justify-between mb-2">
@@ -35,4 +31,4 @@ export const SkilsItem = ():JSX.Element => {
       ))}
     </div>
   );
-}
+};

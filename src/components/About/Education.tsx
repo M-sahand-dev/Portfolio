@@ -1,13 +1,15 @@
-import type {JSX} from 'react'
+import type { JSX } from 'react';
 // import  { education } from '../../constants';
-import {EducationItem} from './index'
-import type {EducationProps} from '../../types'
+import { EducationItem } from './index';
+import type { EducationProps } from '../../types';
 
 interface EducationComponentProps {
   education: EducationProps[];
 }
 
-export const Education = ({education}:EducationComponentProps):JSX.Element => {
+export const Education = ({
+  education,
+}: EducationComponentProps): JSX.Element => {
   return (
     <div className="md:w-1/2 md:pl-6">
       {/* Section heading */}
@@ -29,6 +31,4 @@ export const Education = ({education}:EducationComponentProps):JSX.Element => {
       </div>
     </div>
   );
-}
-
-
+};

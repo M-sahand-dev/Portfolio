@@ -1,3 +1,5 @@
+import type { IconType } from 'react-icons';
+
 // import { number } from "framer-motion";
 
 export interface MobileNavProps {
@@ -16,19 +18,18 @@ export interface NavMobileProps {
   navItems: NavItem[];
 }
 export interface DescriptionProps {
-    name : string;
-    family : string;
-    skils : string;
-    info : string;
+  name: string;
+  family: string;
+  skils: string;
+  info: string;
 }
 
-
-export interface LanguagesProps{
+export interface LanguagesProps {
   id: number;
   language: string;
   grade: number;
 }
-export interface SkillsProps{
+export interface SkillsProps {
   id: number;
   skill: string;
   grade: number;
@@ -63,11 +64,11 @@ export interface InformationSectionProps {
   from: string;
 }
 export interface PortfolioData {
-  id:number;
-  title:string;
-  category:string;
-  description:string;
-  Image:string;
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  Image: string;
 }
 
 export interface BlogPostProps {
@@ -84,4 +85,19 @@ export interface Testimonial {
   name: string;
   revioe: string;
   education: string;
+}
+
+export interface BlogPostPropsContent {
+  post: BlogPostProps[];
+}
+
+export interface ContactLinkProps {
+  id: number;
+  link: string;
+  icon: IconType;
+}
+
+export interface CategoryProps {
+  children: string;
+  onClick: () => void;
 }

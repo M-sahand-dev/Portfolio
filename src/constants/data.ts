@@ -6,10 +6,19 @@ import type {
   ExperienceProps,
   PortfolioData,
   BlogPostProps,
-  Testimonial
+  Testimonial,
+  ContactLinkProps,
 } from '../types';
 
-import test from "../assets/pikaso-composition.jpg";
+import { IoLogoTwitter } from 'react-icons/io';
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTelegram,
+} from 'react-icons/fa';
+
+import test from '../assets/pikaso-composition.jpg';
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', link: '/' },
@@ -20,22 +29,22 @@ export const navItems: NavItem[] = [
 ];
 
 export const languages: LanguagesProps[] = [
-  { id: 1, language: "reading", grade: 60 },
-  { id: 2, language: "speaking", grade: 50 },
-  { id: 3, language: "listening", grade: 55 },
-  { id: 4, language: "grammar", grade: 70 },
-]
-export const   skills: SkillsProps[]= [
-  { id: 1, skill: "HTML & CSS", grade: 90 },
-  { id: 2, skill: "Tailwind CSS", grade: 80 },
-  { id: 3, skill: "Bootstrap", grade: 50 },
-  { id: 4, skill: "JavaScript", grade: 60 },
-  { id: 5, skill: "Git & GitHub", grade: 55 },
-  { id: 6, skill: "React.js", grade: 40 },
-  { id: 7, skill: "jQuery", grade: 40 },
-  { id: 8, skill: "Adobe Photoshop", grade: 75 },
-  { id: 9, skill: "Adobe Illustrator", grade: 65 },
-]
+  { id: 1, language: 'reading', grade: 60 },
+  { id: 2, language: 'speaking', grade: 50 },
+  { id: 3, language: 'listening', grade: 55 },
+  { id: 4, language: 'grammar', grade: 70 },
+];
+export const skills: SkillsProps[] = [
+  { id: 1, skill: 'HTML & CSS', grade: 90 },
+  { id: 2, skill: 'Tailwind CSS', grade: 80 },
+  { id: 3, skill: 'Bootstrap', grade: 50 },
+  { id: 4, skill: 'JavaScript', grade: 60 },
+  { id: 5, skill: 'Git & GitHub', grade: 55 },
+  { id: 6, skill: 'React.js', grade: 40 },
+  { id: 7, skill: 'jQuery', grade: 40 },
+  { id: 8, skill: 'Adobe Photoshop', grade: 75 },
+  { id: 9, skill: 'Adobe Illustrator', grade: 65 },
+];
 export const experience: ExperienceProps[] = [
   {
     id: 1,
@@ -50,103 +59,103 @@ export const experience: ExperienceProps[] = [
     sourcePractice: 'Jonas',
   },
 ];
-export const education: EducationProps[]= [
+export const education: EducationProps[] = [
   {
     id: 1,
-    years: "2023 - 2025",
-    education: "Master in Computer Science",
-    university: "Harvard University",
+    years: '2023 - 2025',
+    education: 'Master in Computer Science',
+    university: 'Harvard University',
   },
   {
     id: 2,
-    years: "2023 - 2025",
-    education: "Master in Computer Science",
-    university: "Harvard University",
+    years: '2023 - 2025',
+    education: 'Master in Computer Science',
+    university: 'Harvard University',
   },
-]
-export const portForioData:PortfolioData[] = [
+];
+export const portForioData: PortfolioData[] = [
   {
     id: 1,
-    title: "Creative Design",
-    category: "Design",
-    description: "UI/UX Design",
+    title: 'Creative Design',
+    category: 'Design',
+    description: 'UI/UX Design',
     Image: test,
   },
   {
     id: 2,
-    title: "Creative Design",
-    category: "Design",
-    description: "UI/UX Design",
+    title: 'Creative Design',
+    category: 'Design',
+    description: 'UI/UX Design',
     Image: test,
   },
   {
     id: 3,
-    title: "Creative Design",
-    category: "Design",
-    description: "UI/UX Design",
+    title: 'Creative Design',
+    category: 'Design',
+    description: 'UI/UX Design',
     Image: test,
   },
   {
     id: 4,
-    title: "Mobile App Design",
-    category: "Design",
-    description: "UI/UX Design",
+    title: 'Mobile App Design',
+    category: 'Design',
+    description: 'UI/UX Design',
     Image: test,
   },
   {
     id: 5,
-    title: "Web Application",
-    category: "Development",
-    description: "Web Development",
+    title: 'Web Application',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 6,
-    title: "E-commerce Website",
-    category: "Development",
-    description: "Web Development",
+    title: 'E-commerce Website',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 7,
-    title: "E-commerce Website",
-    category: "Development",
-    description: "Web Development",
+    title: 'E-commerce Website',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 8,
-    title: "E-commerce Website",
-    category: "Development",
-    description: "Web Development",
+    title: 'E-commerce Website',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 9,
-    title: "E-commerce Website",
-    category: "Development",
-    description: "Web Development",
+    title: 'E-commerce Website',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 10,
-    title: "E-commerce Website",
-    category: "Development",
-    description: "Web Development",
+    title: 'E-commerce Website',
+    category: 'Development',
+    description: 'Web Development',
     Image: test,
   },
   {
     id: 11,
-    title: "Brand Identity",
-    category: "Branding",
-    description: "Branding",
+    title: 'Brand Identity',
+    category: 'Branding',
+    description: 'Branding',
     Image: test,
   },
   {
     id: 12,
-    title: "Corporate Branding",
-    category: "Branding",
-    description: "Branding",
+    title: 'Corporate Branding',
+    category: 'Branding',
+    description: 'Branding',
     Image: test,
   },
 ];
@@ -183,28 +192,55 @@ export const blogPost: BlogPostProps[] = [
   },
 ];
 
-
 // Static list of testimonial data
-export const testimonials :Testimonial[]= [
+export const testimonials: Testimonial[] = [
   {
-    image: "https://www.course-api.com/images/people/person-1.jpeg",
-    name: "Susan Smith",
+    image: 'https://www.course-api.com/images/people/person-1.jpeg',
+    name: 'Susan Smith',
     revioe:
       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
-    education: "CEO, Tech Solutions Inc.",
+    education: 'CEO, Tech Solutions Inc.',
   },
   {
-    image: "https://www.course-api.com/images/people/person-2.jpeg",
-    name: "Anna Johnson",
+    image: 'https://www.course-api.com/images/people/person-2.jpeg',
+    name: 'Anna Johnson',
     revioe:
       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
-    education: "Marketing Director, Brandify Co.",
+    education: 'Marketing Director, Brandify Co.',
   },
   {
-    image: "https://www.course-api.com/images/people/person-4.jpeg",
-    name: "Peter Jones",
+    image: 'https://www.course-api.com/images/people/person-4.jpeg',
+    name: 'Peter Jones',
     revioe:
       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out...",
-    education: "Lead Developer, CodeCraft LLC",
+    education: 'Lead Developer, CodeCraft LLC',
+  },
+];
+
+export const ContactLinks: ContactLinkProps[] = [
+  {
+    id: 1,
+    link: 'https://x.com/M_sahand_js?t=Y3nphbBdHJupcrOUMiTtHA&s=09',
+    icon: IoLogoTwitter,
+  },
+  {
+    id: 2,
+    link: 'https://www.instagram.com/m_sahand_js?igsh=MXIxZTZuaXg5dmRuNw==',
+    icon: FaInstagram,
+  },
+  {
+    id: 3,
+    link: 'https://www.linkedin.com/in/mehdi-leilaei-0042162aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    icon: FaLinkedinIn,
+  },
+  {
+    id: 4,
+    link: 'https://github.com/M-sahand-dev',
+    icon: FaGithub,
+  },
+  {
+    id: 5,
+    link: 'https://t.me/M_sahand_js',
+    icon: FaTelegram,
   },
 ];

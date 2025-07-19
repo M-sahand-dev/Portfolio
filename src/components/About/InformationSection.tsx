@@ -1,45 +1,52 @@
-import type {JSX} from 'react'
-import type {InformationSectionProps} from '../../types';
+import type { JSX } from 'react';
+import type { InformationSectionProps } from '../../types';
 
-export const InformationSection = ({ id, classStyle, name, email, age, from } : InformationSectionProps):JSX.Element => {
+export const InformationSection = ({
+  id,
+  classStyle,
+  name,
+  email,
+  age,
+  from,
+}: InformationSectionProps): JSX.Element => {
   return (
     <div className="md:w-1/3">
-    {/* User detail list */}
-    <ul id={id} className="space-y-2">
+      {/* User detail list */}
+      <ul id={id} className="space-y-2">
         {/* Name */}
         <li className={classStyle}>
-            <span className="text-gray-400">Name:</span>
-            <span className="font-medium">{name}</span>
+          <span className="text-gray-400">Name:</span>
+          <span className="font-medium">{name}</span>
         </li>
 
         {/* Email */}
         <li className={classStyle}>
-            <span className="text-gray-400">Email:</span>
-            <span className="font-medium text-indigo-400">{email}</span>
+          <span className="text-gray-400">Email:</span>
+          <span className="font-medium text-indigo-400">{email}</span>
         </li>
 
         {/* Age */}
         <li className={classStyle}>
-            <span className="text-gray-400">Age:</span>
-            <span className="font-medium">{age}</span>
+          <span className="text-gray-400">Age:</span>
+          <span className="font-medium">{age}</span>
         </li>
 
         {/* Location */}
         <li className={classStyle}>
-            <span className="text-gray-400">From:</span>
-            <span className="font-medium">{from}</span>
+          <span className="text-gray-400">From:</span>
+          <span className="font-medium">{from}</span>
         </li>
-    </ul>
+      </ul>
 
-    {/* Call-to-action: CV download button */}
-    <div className="mt-6">
+      {/* Call-to-action: CV download button */}
+      <div className="mt-6">
         <a
-            href="#"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition duration-300 inline-block"
+          href="#"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md transition duration-300 inline-block"
         >
-            Download CV
+          Download CV
         </a>
+      </div>
     </div>
-</div>
-  )
-}
+  );
+};

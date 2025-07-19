@@ -1,9 +1,9 @@
-import type {JSX} from 'react'
-import { FooterLink , FooterContainerLink  } from './index'
+import type { JSX } from 'react';
+import { FooterLink, FooterContainerLink } from './index';
 
 /**
  * Footer component - Displays the website footer with copyright and navigation links
- * 
+ *
  * Features:
  * - Responsive layout (stacked on mobile, horizontal on desktop)
  * - Copyright notice with dynamic year
@@ -41,5 +41,3 @@ export const Footer = (): JSX.Element => {
     </footer>
   );
 };
-
-export default Footer

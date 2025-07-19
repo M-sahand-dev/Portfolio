@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import type { JSX } from "react";
-import { borderVariants, imageVariants } from "../../constants";
-import Mehdi from "../../assets/profile/Mehdi.jpg"
+import { motion } from 'framer-motion';
+import type { JSX } from 'react';
+import { borderVariants, imageVariants } from '../../constants';
+import Mehdi from '../../assets/profile/Mehdi.jpg';
 
 export const HeroSectionProfile = (): JSX.Element => {
   return (

@@ -1,7 +1,12 @@
 import type { JSX } from 'react';
 import type { EducationProps } from '../../types';
 
-export const EducationItem = ({ id, years, education, university } : EducationProps) :JSX.Element => {
+export const EducationItem = ({
+  id,
+  years,
+  education,
+  university,
+}: EducationProps): JSX.Element => {
   return (
     <div key={id} className="bg-gray-700 bg-opacity-50 p-6 rounded-lg">
       {/* Time period (e.g., "2019 - 2023") */}
@@ -14,4 +19,4 @@ export const EducationItem = ({ id, years, education, university } : EducationPr
       <p className="text-gray-400">{university}</p>
     </div>
   );
-}
+};
