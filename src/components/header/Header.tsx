@@ -1,6 +1,7 @@
 import type { JSX } from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from "react-router-dom";
+import {Link} from "react-scroll"
 import { NavigationMobileMenuBtn, NavigationMobileMenu } from './index';
 import { navItems } from '../../constants';
 import type { NavItem } from '../../types';
@@ -26,10 +27,19 @@ export const Header = (): JSX.Element => {
           </Link>
 
           <nav className="hidden lg:flex space-x-6 *:px-3 *:py-2 *:text-sm *:font-medium *:text-gray-300 *:hover:text-white *:transition-colors *:cursor-pointer">
-            {navItems.map((data: NavItem, index: number) => (
-              <Link to={data.link} id={data.id} key={index}>
-                {data.label}
-              </Link>
+            {navItems.map((item: NavItem) => (
+                    <Link
+                        key={item.id}
+                        to={item.id}
+                        spy={true}
+                        smooth={true}
+                        offset={item.offset}
+                        duration={500}
+                        className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors cursor-pointer"
+                        activeClass="text-indigo-400 font-semibold"
+                      >
+                          {item.label}
+                      </Link>
             ))}
           </nav>
 

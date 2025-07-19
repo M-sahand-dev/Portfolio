@@ -28,11 +28,13 @@ import {
 import test from '../assets/pikaso-composition.jpg';
 
 export const navItems: NavItem[] = [
-  { id: 'home', label: 'Home', link: '/' },
-  { id: 'about', label: 'About', link: '#about' },
-  { id: 'portfolio', label: 'Portfolio', link: '#portfolio' },
-  { id: 'blog', label: 'Blog', link: '#blog' },
-  { id: 'contact', label: 'Contact', link: '#contact' },
+  { id: "home", label: "Home", offset: -150 },
+  { id: "about", label: "About", offset: -50 },
+  { id: "services", label: "Services", offset: -50 },
+  { id: "portfolio", label: "Portfolio", offset: -50 },
+  { id: "testimonials", label: "Testimonials", offset: -30 },
+  { id: "blog", label: "Blog", offset: -30 },
+  { id: "contact", label: "Contact", offset: -20 },
 ];
 
 export const languages: LanguagesProps[] = [

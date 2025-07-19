@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from "react-scroll"
 import type { NavMobileProps } from '../../types';
 
 export const NavigationMobileMenu = ({
@@ -64,21 +64,28 @@ export const NavigationMobileMenu = ({
                     },
                   }}
                 >
-                  <Link
-                    onClick={onClose}
-                    to={item.link}
-                    id={item.id}
-                    className="
-                                            block px-4 py-3 rounded-lg
-                                            text-gray-200 hover:text-white
-                                            hover:bg-gray-700/40
-                                            transition-all duration-200
-                                            font-medium
-                                            active:bg-gray-700/30
-                                        "
-                  >
-                    {item.label}
-                  </Link>
+                      <Link
+                      to={item.id}
+                      spy={true}
+                      smooth={true}
+                      offset={item.offset}
+                      duration={500}
+                      onClick={onClose}
+                      className="
+                          block px-4 py-3 rounded-lg
+                          text-gray-200 hover:text-white
+                          hover:bg-gray-700/40
+                          transition-all duration-200
+                          font-medium
+                          active:bg-gray-700/30
+                      "
+                      activeClass="
+                          font-medium
+                              active:bg-gray-700/30
+                          "
+                      >
+                          {item.label}
+                      </Link>
                 </motion.div>
               ))}
             </div>

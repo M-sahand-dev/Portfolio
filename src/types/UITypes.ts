@@ -10,7 +10,7 @@ export interface MobileNavProps {
 export interface NavItem {
   id: string;
   label: string;
-  link: string;
+  offset: number;
 }
 export interface NavMobileProps {
   isOpen: boolean;
