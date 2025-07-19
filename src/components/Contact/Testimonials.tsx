@@ -6,10 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-// Swiper core styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-
 import { testimonials } from '../../constants/data';
 import type { Testimonial } from '../../types';
 
