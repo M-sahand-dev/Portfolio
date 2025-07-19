@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const TestimonialsComandUser = ({ image, name, revioe, education }) => {
+    return (_jsx("div", { className: "testimonial-slide bg-gray-800 p-8 rounded-lg max-w-4xl mx-auto", children: _jsxs("div", { className: "flex flex-col md:flex-row items-center", children: [_jsx("div", { className: "md:w-1/3 mb-6 md:mb-0 flex justify-center", children: _jsx("img", { src: image, alt: name, className: "w-32 h-32 rounded-full object-cover border-4 border-indigo-600" }) }), _jsxs("div", { className: "md:w-2/3 md:pl-8", children: [_jsx("p", { className: "text-gray-300 italic mb-4", children: revioe }), _jsx("h4", { className: "font-bold", children: name }), _jsx("p", { className: "text-gray-400", children: education })] })] }) }));
+};

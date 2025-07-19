@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Title, Info, InformationSection, Education, Experience, SkilsItem, LanguageSkils, } from './index';
+import { calculateAge } from '../../constants';
+import { education, experience } from '../../constants';
+export const About = () => {
+    const birthDate = '2007-10-28';
+    const age = calculateAge(birthDate);
+    return (_jsx("div", { className: "", children: _jsx("div", { id: "about", className: "py-20 bg-gray-800", children: _jsxs("div", { className: "container mx-auto px-6", children: [_jsx(Title, {}), _jsxs("div", { className: "flex flex-col md:flex-row", children: [_jsx(Info, { id: 'info', name: 'Mehdi Leylaei', Info: 'I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.', Info2: "Delivering work within time and budget which meets client's requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley." }), _jsx(InformationSection, { id: 'information', classStyle: 'flex justify-between border-b border-gray-700 py-2', name: 'Mehdi Leylaei', email: 'mehdileilaei443@gmail.com', age: age, from: 'Dezful , IRAN' })] }), _jsx("div", { className: "mt-20", children: _jsxs("div", { className: "flex flex-col md:flex-row", children: [_jsx(Experience, { experience: experience }), _jsx(Education, { education: education })] }) }), _jsxs("div", { className: "mt-20", children: [_jsx("h3", { className: "text-2xl font-bold mb-8 text-center", children: "My Skills" }), _jsx(SkilsItem, {}), _jsx("h3", { className: "text-2xl font-bold mt-8 mb-8 text-center", children: "Language Skills" }), _jsx(LanguageSkils, {})] })] }) }) }));
+};

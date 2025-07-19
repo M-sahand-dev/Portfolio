@@ -1,0 +1,11 @@
+import type { NavItem, LanguagesProps, SkillsProps, EducationProps, ExperienceProps, PortfolioData, BlogPostProps, Testimonial, ContactLinkProps, ServicesProps } from '../types';
+export declare const navItems: NavItem[];
+export declare const languages: LanguagesProps[];
+export declare const skills: SkillsProps[];
+export declare const experience: ExperienceProps[];
+export declare const education: EducationProps[];
+export declare const portForioData: PortfolioData[];
+export declare const blogPost: BlogPostProps[];
+export declare const testimonials: Testimonial[];
+export declare const ContactLinks: ContactLinkProps[];
+export declare const servicesProps: ServicesProps[];

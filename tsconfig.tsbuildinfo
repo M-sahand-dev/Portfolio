@@ -1,0 +1,1 @@
+{"root":["./core.ts","./sys.ts","./types.ts","./scanner.ts","./parser.ts","./utilities.ts","./binder.ts","./checker.ts","./emitter.ts","./program.ts","./commandlineparser.ts","./tsc.ts","./diagnosticinformationmap.generated.ts"],"errors":true,"version":"5.8.3"}

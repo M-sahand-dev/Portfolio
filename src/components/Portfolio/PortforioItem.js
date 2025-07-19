@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const PortforioItem = ({ id, title, description, Image, }) => {
+    return (_jsx("div", { id: String(id), className: "portfolio-item group", children: _jsxs("div", { className: "relative overflow-hidden rounded-lg", children: [_jsx("img", { src: Image, alt: title, className: "w-full h-64 object-cover transition duration-500 group-hover:scale-110" }), _jsx("div", { className: "absolute inset-0 bg-indigo-600 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300", children: _jsxs("div", { className: "text-center p-4", children: [_jsx("h3", { className: "text-xl font-bold mb-2", children: title }), _jsx("p", { className: "mb-4", children: description }), _jsx("a", { href: "#", className: "inline-block border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-indigo-600 transition", children: "View Project" })] }) })] }) }));
+};
