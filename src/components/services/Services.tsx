@@ -15,15 +15,15 @@ export const Services = (): JSX.Element => {
             <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesProps.map((service:ServicesProps, index:number) => (
+            {servicesProps.map((service: ServicesProps, index: number) => (
               <div
                 key={index}
-                id={service.id}
+                id={String(service.id)}
                 className="bg-gray-800 p-8 rounded-lg hover:bg-indigo-600 transition duration-300 group"
               >
                 {/* Icon with hover color change */}
                 <div className="text-indigo-400 group-hover:text-white text-4xl mb-4">
-                  {<service.icon/>}
+                  {<service.icon />}
                 </div>
 
                 {/* Skill title */}

@@ -21,7 +21,7 @@ export const Footer = (): JSX.Element => {
           {/* Copyright section - appears first on mobile */}
           <div className="mb-6 md:mb-0">
             <p className="text-gray-400">
-              © 2025 Mehdi Leilaei. All rights reserved.
+              © 2025 Mehdi Leylaei. All rights reserved.
             </p>
           </div>
 
