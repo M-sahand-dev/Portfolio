@@ -101,3 +101,9 @@ export interface CategoryProps {
   children: string;
   onClick: () => void;
 }
+export interface ServicesProps {
+  id : number;
+  icon : IconType;
+  skill : string;
+  poraghraph : string;
+}

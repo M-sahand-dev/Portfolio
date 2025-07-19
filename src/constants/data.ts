@@ -8,6 +8,7 @@ import type {
   BlogPostProps,
   Testimonial,
   ContactLinkProps,
+  ServicesProps,
 } from '../types';
 
 import { IoLogoTwitter } from 'react-icons/io';
@@ -16,16 +17,22 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTelegram,
+  FaMobileAlt,
+  FaSearch,
+  FaPaintBrush,
+  FaBullhorn,
+  FaPalette,
+  FaCode
 } from 'react-icons/fa';
 
 import test from '../assets/pikaso-composition.jpg';
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', link: '/' },
-  { id: 'about', label: 'About', link: '/about' },
-  { id: 'portfolio', label: 'Portfolio', link: '/portfolio' },
-  { id: 'blog', label: 'Blog', link: '/blog' },
-  { id: 'contact', label: 'Contact', link: '/contact' },
+  { id: 'about', label: 'About', link: '#about' },
+  { id: 'portfolio', label: 'Portfolio', link: '#portfolio' },
+  { id: 'blog', label: 'Blog', link: '#blog' },
+  { id: 'contact', label: 'Contact', link: '#contact' },
 ];
 
 export const languages: LanguagesProps[] = [
@@ -116,48 +123,6 @@ export const portForioData: PortfolioData[] = [
     description: 'Web Development',
     Image: test,
   },
-  {
-    id: 7,
-    title: 'E-commerce Website',
-    category: 'Development',
-    description: 'Web Development',
-    Image: test,
-  },
-  {
-    id: 8,
-    title: 'E-commerce Website',
-    category: 'Development',
-    description: 'Web Development',
-    Image: test,
-  },
-  {
-    id: 9,
-    title: 'E-commerce Website',
-    category: 'Development',
-    description: 'Web Development',
-    Image: test,
-  },
-  {
-    id: 10,
-    title: 'E-commerce Website',
-    category: 'Development',
-    description: 'Web Development',
-    Image: test,
-  },
-  {
-    id: 11,
-    title: 'Brand Identity',
-    category: 'Branding',
-    description: 'Branding',
-    Image: test,
-  },
-  {
-    id: 12,
-    title: 'Corporate Branding',
-    category: 'Branding',
-    description: 'Branding',
-    Image: test,
-  },
 ];
 
 export const blogPost: BlogPostProps[] = [
@@ -243,4 +208,50 @@ export const ContactLinks: ContactLinkProps[] = [
     link: 'https://t.me/M_sahand_js',
     icon: FaTelegram,
   },
+];
+
+export const servicesProps: ServicesProps[] = [
+  {
+    id: 1,
+    icon: FaPalette,
+    skill: 'UI/UX Design',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 2,
+    icon: FaCode,
+    skill: 'Web Development',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 3,
+    icon: FaMobileAlt,
+    skill: 'App Development',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 4,
+    icon: FaSearch,
+    skill: 'SEO Optimization',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 5,
+    icon: FaPaintBrush,
+    skill: 'Graphic Design',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+  {
+    id: 2,
+    icon: FaBullhorn,
+    skill: 'Digital Marketing',
+    poraghraph:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi velit, sit amet ultrices nisl tincidunt id.',
+  },
+
 ];

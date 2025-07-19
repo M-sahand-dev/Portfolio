@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import { motion } from 'framer-motion'
 import {containerVariants } from "../../constants/animation"
-import {Description , HeroSectionProfile} from './index'
+import{Description , HeroSectionProfile }from "./index"
 
 export const HeroSection =():JSX.Element =>{
     return (
